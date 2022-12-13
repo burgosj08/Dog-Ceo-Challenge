@@ -35,6 +35,8 @@ export const DogsFilters = ({
       theme: "dark",
     });
   };
+  // otra opción para filtrar seria no ir haciendo consultas a medida que se selecciona una raza , sino esperar a que se
+  // presione un boton filtrar y resolver todas las consultas a la api con un promise all
 
   return (
     <Row gutter={[16, 16]} style={{ margin: "0 5%" }}>
@@ -86,7 +88,5 @@ export const DogsFilters = ({
         </Button>
       </Col>
     </Row>
-    // </Row>
-    // </div>
   );
 };
